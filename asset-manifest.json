@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/CurriculumCache/static/css/main.f82604ac.css",
+    "main.js": "/CurriculumCache/static/js/main.4eaf306c.js",
+    "static/js/787.4a306ea5.chunk.js": "/CurriculumCache/static/js/787.4a306ea5.chunk.js",
+    "static/media/mainlogo.svg": "/CurriculumCache/static/media/mainlogo.69ec6c4625151e377a6ee01c708cd35b.svg",
+    "static/media/undraw_learning_sketching_nd4f.svg": "/CurriculumCache/static/media/undraw_learning_sketching_nd4f.4e3c4600a37f95c721857aeb3e14df0a.svg",
+    "static/media/undraw_upload_re_pasx.svg": "/CurriculumCache/static/media/undraw_upload_re_pasx.acd7295af05cb9fc699273890461edde.svg",
+    "static/media/undraw_online_test_re_kyfx.svg": "/CurriculumCache/static/media/undraw_online_test_re_kyfx.6a63990fcd811352cabccf47280bc2d7.svg",
+    "static/media/undraw_safe_re_kiil.svg": "/CurriculumCache/static/media/undraw_safe_re_kiil.f0dd4ae7d012ca45ea61dcf104314f72.svg",
+    "static/media/undraw_road_to_knowledge_m8s0.svg": "/CurriculumCache/static/media/undraw_road_to_knowledge_m8s0.618ae29adb9386528af0.svg",
+    "index.html": "/CurriculumCache/index.html",
+    "main.f82604ac.css.map": "/CurriculumCache/static/css/main.f82604ac.css.map",
+    "main.4eaf306c.js.map": "/CurriculumCache/static/js/main.4eaf306c.js.map",
+    "787.4a306ea5.chunk.js.map": "/CurriculumCache/static/js/787.4a306ea5.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.f82604ac.css",
+    "static/js/main.4eaf306c.js"
+  ]
+}
