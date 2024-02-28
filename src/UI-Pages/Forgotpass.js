@@ -1,11 +1,9 @@
 import React from 'react';
 import { Container,Box,Typography,TextField,Button, Alert } from '@mui/material';
-import {CircularProgress} from '@mui/material';
-import Logo from '../media/logo.svg';
+import Logo from '../media/logos/mainlogo.svg';
 import { firebaseAuth } from '../firebase';
 import Snackbar from '@mui/material/Snackbar';
-import IconButton from '@mui/material/IconButton';
-import CloseIcon from '@mui/icons-material/Close';
+import { Link } from 'react-router-dom';
 
 
 
@@ -91,6 +89,8 @@ import CloseIcon from '@mui/icons-material/Close';
 
 	render() {
 		return (
+			<div>
+			<h1 className="headingd">Curriculum Cache</h1>
 			<Container 
 			maxWidth="xs"
 			style={{
@@ -105,9 +105,10 @@ import CloseIcon from '@mui/icons-material/Close';
 			<img 
 			alt="logo" 
 			src={Logo} 
-			height="60px" 
-			width="60px" />
+			height="70px" 
+			width="70px" />
 			<Typography 
+			 style={{color:"#371a8a"}}
 			variant="h4" 
 			color="secondary">
 			Password Recovery
@@ -132,12 +133,20 @@ import CloseIcon from '@mui/icons-material/Close';
 	          <br/>
 
 	          <Button 
+			  style={{
+			  backgroundColor: "blueviolet"}}
 	          fullWidth
 	          variant="contained" 
 	          color="secondary"
 	          onClick={this.formSubmitted}>
               {this.state.buttontext}
               </Button>
+			  <br/>
+			  <br/>
+			  <span>Go back to </span>
+			  <Link to="/Login" >
+               Sign In
+              </Link>
               {
                 this.state.showtext &&
               <Typography>
@@ -162,6 +171,7 @@ import CloseIcon from '@mui/icons-material/Close';
   </Alert>
 </Snackbar>
 			</Container>
+			</div>
 		)
 	}
 }

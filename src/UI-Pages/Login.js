@@ -6,7 +6,7 @@ import {Button} from '@mui/material';
 import {CircularProgress} from '@mui/material';
 import {Snackbar} from '@mui/material';
 import {Link, redirect} from 'react-router-dom';
-import Logo from "../logo.svg";
+import Logo from "../media/logos/mainlogo.svg";
 import { firebaseAuth } from '../firebase';
 
 const validateEmail = (email) => {
@@ -105,11 +105,12 @@ class Login extends Component {
 
 	render() {
 		return (
+			<div>
+				<h1 className="heading">Curriculum Cache</h1>
 		    <Container 
 		    maxWidth="xs" 
-		    style={{marginTop:"60px",
+		    style={{marginTop:"10px",
 		    textAlign:"center"}} >
-
 			 <Box 
 			 bgcolor="white" 
 			 boxShadow="2" 
@@ -119,12 +120,12 @@ class Login extends Component {
 			 <img 
 			 src={Logo} 
 			 alt="logo" 
-			 height="60px" 
-			 width="60px"/>
+			 height="70px" 
+			 width="70px"/>
 			 <br/>
-			 <Typography 
-			 variant="h4" 
-			 color="secondary">
+			 <Typography
+			 style={{color:"#371a8a"}}
+			 variant="h4" >
              LOGIN 
              </Typography>
              <br/><br/>
@@ -157,6 +158,8 @@ class Login extends Component {
 	          
 	          {this.state.err===true && <Typography  variant="caption" display="block" gutterBottom style={{color:"red"}}>Wrong Credentials</Typography>}
 	          <Button 
+			  style={{
+			  backgroundColor: "blueviolet"}}
 	          fullWidth
 	          variant="contained" 
 	          color="secondary"
@@ -189,6 +192,7 @@ class Login extends Component {
 			 </Box>
 			 <br/><br/><br/>
 			</Container>
+			</div>
 		)
 	}
 }

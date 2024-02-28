@@ -3,7 +3,7 @@ import { Container,TextField,Box,Typography,Button,CircularProgress,Snackbar,
     FormControlLabel,Switch
 } from '@mui/material';
 import {Link} from 'react-router-dom';
-import Logo from '../media/logo.svg';
+import Logo from '../media/logos/mainlogo.svg';
 import { firebaseAuth } from '../firebase';
 
 const validateEmail = (email) => {
@@ -141,6 +141,8 @@ class Signup extends Component {
 
 	render() {
 		return (
+			<div>
+			<h1 className="headingd">Curriculum Cache</h1>
 		    <Container 
 		    maxWidth="xs" 
 		    style={{
@@ -155,10 +157,11 @@ class Signup extends Component {
 			 <img 
 			 src={Logo} 
 			 alt="logo" 
-			 height="60px" 
-			 width="60px"/>
+			 height="70px" 
+			 width="70px"/>
 			 <br/>
 			 <Typography 
+			 style={{color:"#371a8a"}}
 			 variant="h4" 
 			 color="secondary">
              SIGN UP 
@@ -219,6 +222,8 @@ class Signup extends Component {
 			  <br/><br/>
 	          
 	          <Button 
+			  style={{
+				backgroundColor: "blueviolet"}}
 	          fullWidth
 	          variant="contained" 
 	          color="secondary"
@@ -250,7 +255,9 @@ class Signup extends Component {
 			 </Box>
 			 <br/><br/>
 			 <br/><br/>
+			 
 			</Container>
+			</div>
 		)
 	}
 }
